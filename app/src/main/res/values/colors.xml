@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="krwawy">#870015</color>
+    <color name="mistyczny">#A249A3</color>
+    <color name="pomarancza">#FD7E27</color>
+    <color name="luty">#98D8E9</color>
+    <color name="robloks">#22B04C</color>
+    <color name="limonka">#B4E51D</color>
+    <color name="ayarl">#EB1C24</color>
+    <color name="rubaszny">#FDADC8</color>
+    <color name="niebo">#00A1E7</color>
+    <color name="stresy">#E5D8A7</color>
+
 </resources>

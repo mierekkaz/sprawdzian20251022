@@ -1,19 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- blok pierwszy -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/krwawy"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@color/mistyczny"
+                android:gravity="center"
+                >
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pomarancza" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/luty"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- blok teksty -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grupa"
+                android:textSize="30sp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/imi_nazwisko"
+                android:gravity="center"
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/klasa"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- blok wagonowy -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/robloks"
+        android:gravity="center"
+        >
+        <View
+            android:id="@+id/wagon1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@color/black"
+        />
+
+        <View
+            android:id="@+id/wagon2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/wagon1"
+            android:layout_marginStart="80dp"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/wagon3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/wagon2"
+            android:layout_marginStart="80dp"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/wagon4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/wagon3"
+            android:layout_marginStart="80dp"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/wagon5"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/wagon4"
+            android:layout_marginStart="80dp"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/stresy"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/limonka"
+        />
+
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentBottom="true"
+            android:background="@color/niebo">
+
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:background="@color/rubaszny">
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="@color/ayarl">
+
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
